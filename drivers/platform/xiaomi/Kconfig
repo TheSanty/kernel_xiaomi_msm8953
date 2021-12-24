@@ -1,0 +1,22 @@
+# Xiaomi configuration options
+
+config MACH_XIAOMI_MSM8953
+	bool "Xiaomi MSM8953 devices"
+	help
+	  Support for Xiaomi MSM8953 variants
+
+menu "Xiaomi MSM8953 board selection"
+
+config MACH_XIAOMI_SAKURA
+        bool "xiaomi sakura board"
+        select MACH_XIAOMI_MSM8953
+        help
+          Support for Xiaomi Redmi 6 Pro
+
+config MACH_XIAOMI_DAISY
+        bool "xiaomi daisy board"
+        select MACH_XIAOMI_MSM8953
+        help
+          Support for Xiaomi Mi A2 Lite
+
+endmenu
